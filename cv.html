@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV – Adit Bhandari</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: 'Georgia', serif;
+        background: #e8e8e8;
+        padding: 30px 10px;
+        color: #222;
+      }
+      .page {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 52px 60px;
+        min-height: 1100px;
+      }
+
+      /* ── TOP HEADER ── */
+      .cv-header { border-bottom: 3px solid #1a1a2e; padding-bottom: 22px; margin-bottom: 30px; display: flex; align-items: center; gap: 28px; }
+      .cv-avatar { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; border: 3px solid #1a1a2e; flex-shrink: 0; }
+      .cv-avatar-placeholder { width: 90px; height: 90px; border-radius: 50%; background: #1a1a2e; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold; flex-shrink: 0; }
+      .cv-name { font-size: 2rem; font-weight: bold; letter-spacing: 1px; color: #1a1a2e; line-height: 1.1; }
+      .cv-title { font-size: 1rem; color: #e94560; font-style: italic; margin-top: 4px; }
+      .cv-contacts { margin-top: 8px; font-size: 0.82rem; color: #555; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+      .cv-contacts a { color: #555; text-decoration: none; }
+      .cv-contacts a:hover { color: #e94560; }
+
+      /* ── SECTION ── */
+      .cv-section { margin-bottom: 28px; }
+      .cv-section-title {
+        font-size: 0.72rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #1a1a2e;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+        margin-bottom: 16px;
+      }
+      .cv-body { font-size: 0.9rem; color: #444; line-height: 1.75; }
+
+      /* ── EDUCATION ENTRY ── */
+      .edu-entry { margin-bottom: 14px; }
+      .edu-entry .degree { font-weight: bold; color: #1a1a2e; font-size: 0.92rem; }
+      .edu-entry .school { color: #555; font-size: 0.88rem; }
+      .edu-entry .year { font-size: 0.8rem; color: #999; font-style: italic; margin-top: 2px; }
+
+      /* ── SKILLS TABLE ── */
+      .skills-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+      .skill-group-label { font-size: 0.78rem; font-weight: bold; color: #e94560; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px; }
+      .skill-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+      .skill-name { font-size: 0.85rem; color: #333; }
+      .skill-bar-outer { width: 130px; height: 5px; background: #e9ecef; border-radius: 999px; overflow: hidden; }
+      .skill-bar-inner { height: 100%; border-radius: 999px; background: #1a1a2e; }
+
+      /* ── HOBBIES ── */
+      .hobby-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+      .hobby-tag {
+        background: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 50px;
+        padding: 4px 14px;
+        font-size: 0.82rem;
+        color: #333;
+      }
+
+      /* ── PRINT ── */
+      .print-btn {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 24px;
+        padding: 10px 30px;
+        background: #1a1a2e;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        font-family: Georgia, serif;
+        letter-spacing: 1px;
+      }
+      @media print {
+        body { background: white; padding: 0; }
+        .page { padding: 30px 40px; box-shadow: none; }
+        .print-btn { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <button class="print-btn" onclick="window.print()">&#128438; Print / Save as PDF</button>
+
+    <div class="page">
+
+      <!-- HEADER -->
+      <div class="cv-header">
+        <div class="cv-avatar-placeholder">AB</div>
+        <div>
+          <div class="cv-name">Adit Bhandari</div>
+          <div class="cv-title">Diploma in Computer Engineering</div>
+          <div class="cv-contacts">
+            <a href="https://aditbhandari.com.np">aditbhandari.com.np</a>
+            <a href="https://github.com/abizeet">github.com/abizeet</a>
+            <a href="https://www.instagram.com/adit.bhandari.333">instagram/adit.bhandari.333</a>
+            <span>Pokhara-27, Kaski, Nepal</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROFILE -->
+      <div class="cv-section">
+        <div class="cv-section-title">Profile</div>
+        <p class="cv-body">
+          Motivated and detail-oriented Computer Engineering student based in Pokhara-27, Kaski, with a strong foundation in software development, electrical systems, and digital media. Experienced in Python, Django, web technologies, and creative tools including photography and Adobe Photoshop. Passionate about building practical solutions, creating content, and continuous learning.
+        </p>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="cv-section">
+        <div class="cv-section-title">Education</div>
+
+        <div class="edu-entry">
+          <div class="degree">Diploma in Computer Engineering</div>
+          <div class="school">Pokhara Engineering College &nbsp;|&nbsp; Phirke, Pokhara</div>
+          <div class="year">2020 – 2025</div>
+        </div>
+
+        <div class="edu-entry">
+          <div class="degree">Higher Secondary Education (+2) — Humanities</div>
+          <div class="school">Shree Amar Singh Secondary School &nbsp;|&nbsp; Ramghat, Pokhara</div>
+          <div class="year">2025 – 2026</div>
+        </div>
+
+        <div class="edu-entry">
+          <div class="degree">School Education (SEE)</div>
+          <div class="school">Shree Gogan Secondary School &nbsp;|&nbsp; Gagangauda, Pokhara</div>
+          <div class="year">2012 – 2019</div>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="cv-section">
+        <div class="cv-section-title">Skills</div>
+        <div class="skills-cols">
+
+          <div>
+            <div class="skill-group-label">Technical</div>
+
+            <div class="skill-row">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar-outer"><div class="skill-bar-inner" style="width:88%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Django</span>
+              <div class="skill-bar-outer"><div class="skill-bar-inner" style="width:82%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">HTML</span>
+              <div class="skill-bar-outer"><div class="skill-bar-inner" style="width:90%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">CSS</span>
+              <div class="skill-bar-outer"><div class="skill-bar-inner" style="width:85%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar-outer"><div class="skill-bar-inner" style="width:75%"></div></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="skill-group-label">Other Expertise</div>
+
+            <div class="skill-row">
+              <span class="skill-name">Electrical Engineering</span>
+              <div class="skill-bar-outer"><div class="skill-bar-inner" style="width:80%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Photography</span>
+              <div class="skill-bar-outer"><div class="skill-bar-inner" style="width:83%"></div></div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Adobe Photoshop</span>
+              <div class="skill-bar-outer"><div class="skill-bar-inner" style="width:78%"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PROJECTS / EXPERIENCE -->
+      <div class="cv-section">
+        <div class="cv-section-title">Experience &amp; Projects</div>
+        <p class="cv-body">
+          &bull; Developed web applications using Python and Django with full-stack capabilities.<br/>
+          &bull; Designed and styled responsive web pages using HTML &amp; CSS.<br/>
+          &bull; Built Java-based applications during academic and personal projects.<br/>
+          &bull; Worked on electrical circuit design and troubleshooting as part of engineering coursework.<br/>
+          &bull; Active content creator on YouTube covering technology and engineering topics.<br/>
+          &bull; Open-source contributor on GitHub (github.com/abizeet).<br/>
+          &bull; Photography and post-processing using Adobe Photoshop for personal and client projects.
+        </p>
+      </div>
+
+      <!-- HOBBIES -->
+      <div class="cv-section">
+        <div class="cv-section-title">Hobbies &amp; Interests</div>
+        <div class="hobby-tags">
+          <span class="hobby-tag">&#127859; Cooking</span>
+          <span class="hobby-tag">&#9992; Travelling</span>
+          <span class="hobby-tag">&#128657; Riding</span>
+          <span class="hobby-tag">&#127911; Music Listening</span>
+          <span class="hobby-tag">&#127947; Exercise</span>
+          <span class="hobby-tag">&#127918; Gaming</span>
+        </div>
+      </div>
+
+      <!-- LINKS -->
+      <div class="cv-section">
+        <div class="cv-section-title">Online Profiles</div>
+        <p class="cv-body">
+          Website: <a href="https://aditbhandari.com.np" style="color:#e94560">aditbhandari.com.np</a><br/>
+          GitHub: <a href="https://github.com/abizeet" style="color:#e94560">github.com/abizeet</a><br/>
+          Instagram: <a href="https://www.instagram.com/adit.bhandari.333" style="color:#e94560">instagram.com/adit.bhandari.333</a><br/>
+          Facebook: <a href="https://www.facebook.com/adit.bhandari.357" style="color:#e94560">facebook.com/adit.bhandari.357</a>
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>

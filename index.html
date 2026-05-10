@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Adit Bhandari - Diploma in Computer Engineering, Pokhara Engineering College, Phirke, Pokhara. Based in Pokhara-27, Kaski, Nepal." />
+    <meta name="author" content="Adit Bhandari" />
+    <title>Adit Bhandari Official Website</title>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Lato', sans-serif; background: #f8f9fa; color: #333; line-height: 1.6; }
+      a { text-decoration: none; }
+      :root {
+        --dark: #1a1a2e; --dark2: #16213e; --dark3: #0f3460;
+        --accent: #e94560; --accent-hover: #c73652;
+        --light-bg: #f8f9fa; --white: #ffffff;
+        --muted: #6c757d; --border: #e9ecef;
+      }
+      .masthead {
+        background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 60%, var(--dark3) 100%);
+        color: white; text-align: center; padding: 80px 20px 60px;
+      }
+      .masthead-avatar {
+        width: 160px; height: 160px; border-radius: 50%;
+        object-fit: cover; object-position: center top;
+        border: 4px solid rgba(255,255,255,0.35);
+        margin: 0 auto 24px; display: block;
+      }
+      .masthead-heading {
+        font-family: 'Montserrat', sans-serif;
+        font-size: clamp(1.8rem, 5vw, 2.8rem);
+        font-weight: 700; letter-spacing: 4px;
+        text-transform: uppercase; margin-bottom: 8px;
+      }
+      .masthead-subheading {
+        font-size: 1.1rem; font-weight: 300;
+        letter-spacing: 2px; color: rgba(255,255,255,0.75); margin-bottom: 10px;
+      }
+      .masthead-location { font-size: 0.85rem; color: rgba(255,255,255,0.5); letter-spacing: 1px; margin-bottom: 20px; }
+      .masthead-location i { margin-right: 5px; }
+      .masthead nav { margin-top: 8px; }
+      .masthead nav a { color: rgba(255,255,255,0.75); font-size: 1.4rem; margin: 0 12px; transition: color 0.2s; }
+      .masthead nav a:hover { color: var(--accent); }
+      section { padding: 70px 20px; }
+      .container { max-width: 960px; margin: 0 auto; }
+      .section-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: clamp(1.2rem, 3vw, 1.6rem); font-weight: 700;
+        text-align: center; text-transform: uppercase;
+        letter-spacing: 3px; color: var(--dark); margin-bottom: 10px;
+      }
+      .section-divider { width: 50px; height: 3px; background: var(--accent); margin: 0 auto 44px; border-radius: 2px; }
+      #about { background: var(--white); }
+      .about-text { text-align: center; font-size: 1.05rem; color: var(--muted); line-height: 1.85; max-width: 700px; margin: 0 auto; }
+      #education { background: var(--light-bg); }
+      .edu-card {
+        background: var(--white); border-radius: 12px; padding: 26px 30px;
+        margin-bottom: 16px; border-left: 4px solid var(--accent);
+        display: flex; align-items: flex-start; gap: 20px; transition: transform 0.2s;
+      }
+      .edu-card:hover { transform: translateX(4px); }
+      .edu-icon { font-size: 1.8rem; color: var(--accent); margin-top: 3px; flex-shrink: 0; }
+      .edu-degree { font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+      .edu-school { font-size: 0.95rem; color: #555; margin-bottom: 4px; }
+      .edu-year { font-size: 0.82rem; color: var(--muted); }
+      #skills { background: var(--white); }
+      .skills-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+      @media (max-width: 620px) { .skills-columns { grid-template-columns: 1fr; gap: 32px; } }
+      .skill-group-title { font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 22px; }
+      .skill-item { margin-bottom: 18px; }
+      .skill-top { display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; color: var(--dark); margin-bottom: 7px; }
+      .skill-bar { height: 6px; background: var(--border); border-radius: 999px; overflow: hidden; }
+      .skill-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--accent), var(--dark3)); animation: grow 1.2s ease forwards; }
+      @keyframes grow { from { width: 0 !important; } }
+      #hobbies { background: var(--light-bg); }
+      .hobbies-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 16px; }
+      .hobby-card { background: var(--white); border-radius: 12px; padding: 26px 12px; text-align: center; transition: transform 0.2s, box-shadow 0.2s; border: 1px solid transparent; }
+      .hobby-card:hover { transform: translateY(-5px); box-shadow: 0 10px 28px rgba(0,0,0,0.09); border-color: var(--border); }
+      .hobby-icon { font-size: 2rem; color: var(--accent); margin-bottom: 12px; }
+      .hobby-label { font-size: 0.82rem; font-weight: 700; font-family: 'Montserrat', sans-serif; letter-spacing: 1px; color: var(--dark); text-transform: uppercase; }
+      .cv-cta { background: var(--dark); text-align: center; padding: 56px 20px; }
+      .cv-cta h2 { font-family: 'Montserrat', sans-serif; font-size: 1.3rem; color: white; margin-bottom: 24px; letter-spacing: 2px; text-transform: uppercase; }
+      .cv-btn { display: inline-block; background: var(--accent); color: white; padding: 14px 38px; border-radius: 50px; font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 2px; font-size: 0.88rem; text-transform: uppercase; transition: background 0.2s, transform 0.1s; }
+      .cv-btn:hover { background: var(--accent-hover); transform: scale(1.04); }
+      .copyright { background: #111; color: rgba(255,255,255,0.45); text-align: center; padding: 22px; font-size: 0.8rem; }
+      @media (max-width: 480px) { .masthead { padding: 60px 16px 44px; } .masthead-avatar { width: 130px; height: 130px; } .edu-card { padding: 20px; } }
+    </style>
+  </head>
+  <body id="page-top">
+
+    <header class="masthead">
+      <img class="masthead-avatar" src="adit.jpg" alt="Adit Bhandari" />
+      <h1 class="masthead-heading">Adit Bhandari</h1>
+      <p class="masthead-subheading">Diploma in Computer Engineering</p>
+      <p class="masthead-location"><i class="fas fa-map-marker-alt"></i> Pokhara-27, Kaski, Nepal</p>
+      <nav>
+        <a href="https://www.facebook.com/adit.bhandari.357" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com/abizeet" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/adit.bhandari.333" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+        <p class="about-text">
+          I am a Diploma in Computer Engineering student at Pokhara Engineering College, Phirke, Pokhara. Based in Pokhara-27, Kaski, Nepal, I am passionate about software development, electrical systems, and visual arts. I love building things — both in code and in real life. I enjoy creating content, contributing to open source, and constantly learning new skills across technology and creativity.
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="section-divider"></div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <p class="edu-degree">Diploma in Computer Engineering</p>
+            <p class="edu-school">Pokhara Engineering College &nbsp;|&nbsp; Phirke, Pokhara</p>
+            <p class="edu-year">2020 – 2025</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div>
+            <p class="edu-degree">Higher Secondary Education (+2) — Humanities</p>
+            <p class="edu-school">Shree Amar Singh Secondary School &nbsp;|&nbsp; Ramghat, Pokhara</p>
+            <p class="edu-year">2025 – 2026</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+          <div>
+            <p class="edu-degree">School Education (SEE)</p>
+            <p class="edu-school">Shree Gogan Secondary School &nbsp;|&nbsp; Gagangauda, Pokhara</p>
+            <p class="edu-year">2012 – 2019</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-divider"></div>
+        <div class="skills-columns">
+          <div>
+            <p class="skill-group-title"><i class="fas fa-code"></i> &nbsp;Technical</p>
+            <div class="skill-item"><div class="skill-top"><span>Python</span><span>88%</span></div><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span>Django</span><span>82%</span></div><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span>HTML</span><span>90%</span></div><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span>CSS</span><span>85%</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span>Java</span><span>75%</span></div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+          </div>
+          <div>
+            <p class="skill-group-title"><i class="fas fa-tools"></i> &nbsp;Other Expertise</p>
+            <div class="skill-item"><div class="skill-top"><span>Electrical Engineering</span><span>80%</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span>Photography</span><span>83%</span></div><div class="skill-bar"><div class="skill-fill" style="width:83%"></div></div></div>
+            <div class="skill-item"><div class="skill-top"><span>Adobe Photoshop</span><span>78%</span></div><div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <div class="container">
+        <h2 class="section-title">Hobbies</h2>
+        <div class="section-divider"></div>
+        <div class="hobbies-grid">
+          <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-utensils"></i></div><div class="hobby-label">Cooking</div></div>
+          <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-plane"></i></div><div class="hobby-label">Travelling</div></div>
+          <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-motorcycle"></i></div><div class="hobby-label">Riding</div></div>
+          <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-headphones"></i></div><div class="hobby-label">Music</div></div>
+          <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-dumbbell"></i></div><div class="hobby-label">Exercise</div></div>
+          <div class="hobby-card"><div class="hobby-icon"><i class="fas fa-gamepad"></i></div><div class="hobby-label">Gaming</div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cv-cta">
+      <h2>Want to know more?</h2>
+      <a class="cv-btn" href="cv.html" target="_blank"><i class="fas fa-file-alt"></i> &nbsp;View My CV</a>
+    </div>
+
+    <div class="copyright">
+      <small>Copyright &copy; 2026 Adit Bhandari</small>
+    </div>
+
+  </body>
+</html>
